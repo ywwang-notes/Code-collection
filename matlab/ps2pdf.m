@@ -1,5 +1,6 @@
 function ps2pdf(varargin)
 %PS2PDF Function to convert a PostScript(R) file to PDF using GhostScript(R)
+% source: https://www.mathworks.com/matlabcentral/fileexchange/19516-ps2pdf
 %
 %  Converts a PostScript file into PDF. The resulting PDF file will contain
 %  one page for each page defined in the PostScript files, so a multi-page
