@@ -1,6 +1,6 @@
 function MNI=vox2mni(M,VOX)
 % Voxel-space to MNI-space
-% source: http://gibms.mc.ntu.edu.tw/bmlab/tools/data-analysis-codes/vox2mni-m/M=M(1:3,1:3);
+% source: http://gibms.mc.ntu.edu.tw/bmlab/tools/data-analysis-codes/vox2mni-m/
 
 T=M(1:3,4);
 M=M(1:3,1:3);
