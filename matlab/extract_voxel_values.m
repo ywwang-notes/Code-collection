@@ -4,19 +4,19 @@
 %
 % Usage: [Ym R info] = extract_voxel_values(mask,data)
 %
-% Ym    ? matrix of output mean of values across voxels per image (row) per
+% Ym    - matrix of output mean of values across voxels per image (row) per
 %         region (column).
-% R     ? structure containing voxel info per region (R), per image (I):
+% R     - structure containing voxel info per region (R), per image (I):
 %         R.I.Ya  ? output vector of values of all voxels.
 %         R.I.xyz ? matrix indices of voxels in mask region/cluster.
 %         R.I.mni ? mni coordinates of voxels in mask region/cluster.
 %         E.g. to get vector of value for region r, image i, after 
 %         extraction, type R(r).I(i).Ya
-% info  ? structure containing region and image files used:
+% info  - structure containing region and image files used:
 %         info.regions ? string array of region files used.
 %         info.images ? string array of image files used.
-% mask  ? string array of mask image file name(s).
-% data  ? string array of image data file name(s). Can be any analyze or
+% mask  - string array of mask image file name(s).
+% data  - string array of image data file name(s). Can be any analyze or
 %         nifti image that contains voxel values of interest, which can be
 %         beta values, contrast values, t values etc.
 %         e.g. ['beta_0005.img';'beta_0001.img'];
