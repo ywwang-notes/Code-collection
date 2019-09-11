@@ -59,7 +59,7 @@ for i = 1:size(data,1)
                 xyz = voxpts(roi,deblank(data(i,:)));
             case {'.nii','.img'}
                 maskdata = spm_read_vols(spm_vol(deblank(mask(r,:))));
-                [x,y,z] = ind2sub(size(maskdata),find(maskdata));
+                [x,y,z] = ind2sub(size(maskdata),find(maskdata > 0.5)); % threshold revised by ywwang
                 xyz = [x y z]';
         end
         
